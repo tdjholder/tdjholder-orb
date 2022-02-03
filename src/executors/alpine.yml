@@ -1,0 +1,12 @@
+description:
+  The alpine executor to use with random number generator
+
+docker:
+  - image: 'alpine:<<parameters.tag>>'
+
+parameters:
+  tag:
+    default: latest
+    description: >
+      Pick a specific alpine image variant:
+    type: string

@@ -1,0 +1,15 @@
+description: >
+  This command echos a random number.
+# What will this command do?
+# Descriptions should be short, simple, and clear.
+parameters:
+  upper:
+    type: int
+    default: 10
+    description: "What is the upper bound of your random number?"
+steps:
+  - run:
+      environment:
+        PARAM_UPPER: <<parameters.upper>>
+      name: Random number generator
+      command: <<include(scripts/random_number.sh)>>
