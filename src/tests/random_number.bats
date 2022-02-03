@@ -1,13 +1,15 @@
 # Runs prior to every test
 setup() {
     # Load our script file.
-    source ./src/scripts/greet.sh
+    source ./src/scripts/random_number.sh
 }
 
-@test '1: Greet the world' {
+@test '1: Pick a random number' {
     # Mock environment variables or functions by exporting them (after the script has been sourced)
-    export PARAM_TO="Tom"
+    export PARAM_UPPER=1
     # Capture the output of our "Greet" function
-    result=$(Greet)
-    [ "$result" == "Hello Tom" ]
+    result=$(RandomNumber)
+    [ "$result" == 1 ]
+
+    echo $result was chosen
 }

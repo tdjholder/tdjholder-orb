@@ -1,0 +1,12 @@
+description: >
+  Make a random choice
+executor: alpine
+
+parameters:
+  upper:
+    type: integer
+    default: 10
+    description: "Upper bound for the random number generator"
+steps:
+  - random_number:
+      upper: << parameters.upper >>
