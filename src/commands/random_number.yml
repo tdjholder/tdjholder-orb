@@ -4,7 +4,7 @@ description: >
 # Descriptions should be short, simple, and clear.
 parameters:
   upper:
-    type: int
+    type: integer
     default: 10
     description: "What is the upper bound of your random number?"
 steps:

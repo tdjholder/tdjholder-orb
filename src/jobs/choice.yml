@@ -4,7 +4,7 @@ executor: alpine
 
 parameters:
   upper:
-    type: int
+    type: integer
     default: 10
     description: "Upper bound for the random number generator"
 steps:

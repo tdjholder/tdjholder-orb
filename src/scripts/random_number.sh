@@ -1,5 +1,5 @@
 RandomNumber() {
-    echo $(( ( RANDOM % $PARAM_UPPER )  + 1 ))
+    echo $(( ( RANDOM % PARAM_UPPER )  + 1 ))
 }
 
 # Will not run if sourced for bats-core tests.
