@@ -10,4 +10,6 @@ setup() {
     # Capture the output of our "Greet" function
     result=$(RandomNumber)
     [ "$result" == 1 ]
+
+    echo $result was chosen
 }

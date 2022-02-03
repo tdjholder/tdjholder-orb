@@ -9,5 +9,5 @@ setup() {
     export PARAM_TO="Tom"
     # Capture the output of our "Greet" function
     result=$(Greet)
-    [ "$result" == "Hello World" ]
+    [ "$result" == "Hello Tom" ]
 }
